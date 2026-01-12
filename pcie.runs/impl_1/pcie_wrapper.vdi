@@ -1,0 +1,637 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 23 17:12:47 2025
+# Process ID: 125665
+# Current directory: /home/alexey101/vivado_prj/pcie/pcie.runs/impl_1
+# Command line: vivado -log pcie_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pcie_wrapper.tcl -notrace
+# Log file: /home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper.vdi
+# Journal file: /home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source pcie_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+Command: link_design -top pcie_wrapper -part xc7z045ffg900-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_axi_bram_ctrl_0_0/pcie_axi_bram_ctrl_0_0.dcp' for cell 'pcie_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_axi_bram_ctrl_1_0/pcie_axi_bram_ctrl_1_0.dcp' for cell 'pcie_i/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_blk_mem_gen_0_0/pcie_blk_mem_gen_0_0.dcp' for cell 'pcie_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_0_0/pcie_proc_sys_reset_0_0.dcp' for cell 'pcie_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_1_0/pcie_proc_sys_reset_1_0.dcp' for cell 'pcie_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_processing_system7_0_0/pcie_processing_system7_0_0.dcp' for cell 'pcie_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_util_ds_buf_0_0/pcie_util_ds_buf_0_0.dcp' for cell 'pcie_i/util_ds_buf_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/pcie_xdma_0_0.dcp' for cell 'pcie_i/xdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xlconstant_0_0/pcie_xlconstant_0_0.dcp' for cell 'pcie_i/xlconstant_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xlconstant_1_0/pcie_xlconstant_1_0.dcp' for cell 'pcie_i/xlconstant_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xlconstant_2_0/pcie_xlconstant_2_0.dcp' for cell 'pcie_i/xlconstant_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xlconstant_3_0/pcie_xlconstant_3_0.dcp' for cell 'pcie_i/xlconstant_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_auto_pc_0/pcie_auto_pc_0.dcp' for cell 'pcie_i/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_auto_ds_0/pcie_auto_ds_0.dcp' for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds'
+INFO: [Netlist 29-17] Analyzing 1502 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_0_0/pcie_proc_sys_reset_0_0_board.xdc] for cell 'pcie_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_0_0/pcie_proc_sys_reset_0_0_board.xdc] for cell 'pcie_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_0_0/pcie_proc_sys_reset_0_0.xdc] for cell 'pcie_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_0_0/pcie_proc_sys_reset_0_0.xdc] for cell 'pcie_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_processing_system7_0_0/pcie_processing_system7_0_0.xdc] for cell 'pcie_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_processing_system7_0_0/pcie_processing_system7_0_0.xdc] for cell 'pcie_i/processing_system7_0/inst'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_1_0/pcie_proc_sys_reset_1_0_board.xdc] for cell 'pcie_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_1_0/pcie_proc_sys_reset_1_0_board.xdc] for cell 'pcie_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_1_0/pcie_proc_sys_reset_1_0.xdc] for cell 'pcie_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_proc_sys_reset_1_0/pcie_proc_sys_reset_1_0.xdc] for cell 'pcie_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_0/source/pcie_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_0/source/pcie_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_0/source/pcie_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:121]
+create_generated_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 2405.480 ; gain = 598.648 ; free physical = 18228 ; free virtual = 30134
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_0/source/pcie_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/pcie_xdma_0_0_board.xdc] for cell 'pcie_i/xdma_0/inst'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/pcie_xdma_0_0_board.xdc] for cell 'pcie_i/xdma_0/inst'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/source/pcie_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'pcie_i/xdma_0/inst'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xdma_0_0/source/pcie_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'pcie_i/xdma_0/inst'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_util_ds_buf_0_0/pcie_util_ds_buf_0_0_board.xdc] for cell 'pcie_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_util_ds_buf_0_0/pcie_util_ds_buf_0_0_board.xdc] for cell 'pcie_i/util_ds_buf_0/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_util_ds_buf_0_0/pcie_util_ds_buf_0_0.xdc] for cell 'pcie_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_util_ds_buf_0_0/pcie_util_ds_buf_0_0.xdc] for cell 'pcie_i/util_ds_buf_0/U0'
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/constrs_1/new/constr.xdc]
+Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_auto_ds_0/pcie_auto_ds_0_clocks.xdc] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_auto_ds_0/pcie_auto_ds_0_clocks.xdc] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/usr_irq_xpm_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/usr_irq_xpm_cdc'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pl_received_hot_rst_cdc'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/phy_lnk_up_cdc'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 548 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 20 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 509 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 2591.570 ; gain = 1325.312 ; free physical = 18195 ; free virtual = 30101
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18192 ; free virtual = 30099
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: b68797eb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18168 ; free virtual = 30075
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 27 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 177e431ca
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18195 ; free virtual = 30098
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 29 inverter(s) to 29 load pin(s).
+Phase 2 Constant propagation | Checksum: 13b5b4eaa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18194 ; free virtual = 30097
+INFO: [Opt 31-389] Phase Constant propagation created 693 cells and removed 1070 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 17695f37f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18191 ; free virtual = 30093
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3790 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 17695f37f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18194 ; free virtual = 30097
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 10fa7a964
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18194 ; free virtual = 30097
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 17f3777dc
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18195 ; free virtual = 30098
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18195 ; free virtual = 30098
+Ending Logic Optimization Task | Checksum: 19006592f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2591.570 ; gain = 0.000 ; free physical = 18195 ; free virtual = 30098
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.364 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 31 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 9 newly gated: 30 Total Ports: 62
+Ending PowerOpt Patch Enables Task | Checksum: 11b2f7a72
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18009 ; free virtual = 29912
+Ending Power Optimization Task | Checksum: 11b2f7a72
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 3065.902 ; gain = 474.332 ; free physical = 18050 ; free virtual = 29952
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: e1a086f3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18083 ; free virtual = 29986
+Ending Final Cleanup Task | Checksum: e1a086f3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18083 ; free virtual = 29986
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 3065.902 ; gain = 474.332 ; free physical = 18083 ; free virtual = 29986
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18076 ; free virtual = 29983
+INFO: [Common 17-1381] The checkpoint '/home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18133 ; free virtual = 30038
+INFO: [runtcl-4] Executing : report_drc -file pcie_wrapper_drc_opted.rpt -pb pcie_wrapper_drc_opted.pb -rpx pcie_wrapper_drc_opted.rpx
+Command: report_drc -file pcie_wrapper_drc_opted.rpt -pb pcie_wrapper_drc_opted.pb -rpx pcie_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[10] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[6]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[11] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[7]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[12] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[8]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[13] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[9]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[14] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[10]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[4] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[0]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[5] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[1]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[6] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[2]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[7] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[3]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[8] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[4]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[9] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[5]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[10] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[6]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[11] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[7]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[12] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[8]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[13] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[9]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[14] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[10]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[6] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[2]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[7] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[3]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[8] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[4]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[9] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[5]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_12) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18151 ; free virtual = 30056
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 863a5ce9
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18151 ; free virtual = 30056
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18165 ; free virtual = 30070
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 14dde634a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18164 ; free virtual = 30069
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1f7e0d585
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18031 ; free virtual = 29936
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1f7e0d585
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18031 ; free virtual = 29936
+Phase 1 Placer Initialization | Checksum: 1f7e0d585
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3065.902 ; gain = 0.000 ; free physical = 18031 ; free virtual = 29936
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1b33d1029
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18032 ; free virtual = 29937
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17986 ; free virtual = 29883
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 161f4dcc7
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:18 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17987 ; free virtual = 29884
+Phase 2 Global Placement | Checksum: 1364ee869
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17987 ; free virtual = 29884
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1364ee869
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:19 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17987 ; free virtual = 29884
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 146994e4c
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:21 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17989 ; free virtual = 29885
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 19e93dad5
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:21 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17985 ; free virtual = 29882
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1655e5f50
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:21 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17992 ; free virtual = 29885
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: fc241cf5
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17986 ; free virtual = 29879
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 18117f41b
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17986 ; free virtual = 29879
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 181b210ef
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17988 ; free virtual = 29881
+Phase 3 Detail Placement | Checksum: 181b210ef
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 17988 ; free virtual = 29881
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: ce6604fb
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net pcie_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rc/u_dma_rc_mem_pfch/pfch_do_vld_r_reg_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: ce6604fb
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:27 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.892. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: e01982b6
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+Phase 4.1 Post Commit Optimization | Checksum: e01982b6
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: e01982b6
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: e01982b6
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 13c1f85dd
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13c1f85dd
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18040 ; free virtual = 29933
+Ending Placer Task | Checksum: ca8e4bb8
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18111 ; free virtual = 30004
+INFO: [Common 17-83] Releasing license: Implementation
+73 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:31 . Memory (MB): peak = 3089.938 ; gain = 24.035 ; free physical = 18111 ; free virtual = 30004
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.78 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 18034 ; free virtual = 29979
+INFO: [Common 17-1381] The checkpoint '/home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 18095 ; free virtual = 30002
+INFO: [runtcl-4] Executing : report_io -file pcie_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 18064 ; free virtual = 29971
+INFO: [runtcl-4] Executing : report_utilization -file pcie_wrapper_utilization_placed.rpt -pb pcie_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.35 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 18064 ; free virtual = 29971
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file pcie_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 18065 ; free virtual = 29972
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 6268387a ConstDB: 0 ShapeSum: 6826133e RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: d3d9e111
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17824 ; free virtual = 29731
+Post Restoration Checksum: NetGraph: 36e9eb27 NumContArr: 9ceff5ea Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: d3d9e111
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17826 ; free virtual = 29734
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: d3d9e111
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17775 ; free virtual = 29683
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: d3d9e111
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17775 ; free virtual = 29683
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: fc2e5a0d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:31 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17637 ; free virtual = 29545
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.825  | TNS=0.000  | WHS=-0.531 | THS=-2604.923|
+
+Phase 2 Router Initialization | Checksum: c17a24f5
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:33 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17632 ; free virtual = 29539
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1a94e6f56
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:34 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17654 ; free virtual = 29562
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2773
+ Number of Nodes with overlaps = 139
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.903  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 165a1bf2c
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17600 ; free virtual = 29509
+Phase 4 Rip-up And Reroute | Checksum: 165a1bf2c
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17604 ; free virtual = 29513
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 165a1bf2c
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17586 ; free virtual = 29495
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 165a1bf2c
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17578 ; free virtual = 29487
+Phase 5 Delay and Skew Optimization | Checksum: 165a1bf2c
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:38 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17568 ; free virtual = 29477
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d1d10a6c
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:39 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17479 ; free virtual = 29388
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.996  | TNS=0.000  | WHS=0.040  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1d1d10a6c
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:39 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17535 ; free virtual = 29444
+Phase 6 Post Hold Fix | Checksum: 1d1d10a6c
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:39 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17535 ; free virtual = 29444
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.7076 %
+  Global Horizontal Routing Utilization  = 2.36302 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1beefa8c3
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:39 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17527 ; free virtual = 29438
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1beefa8c3
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:39 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17523 ; free virtual = 29434
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1d219ba85
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17366 ; free virtual = 29277
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.996  | TNS=0.000  | WHS=0.040  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1d219ba85
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17473 ; free virtual = 29384
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17482 ; free virtual = 29403
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+90 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:27 ; elapsed = 00:00:43 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17430 ; free virtual = 29341
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.88 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17371 ; free virtual = 29344
+INFO: [Common 17-1381] The checkpoint '/home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3089.938 ; gain = 0.000 ; free physical = 17462 ; free virtual = 29387
+INFO: [runtcl-4] Executing : report_drc -file pcie_wrapper_drc_routed.rpt -pb pcie_wrapper_drc_routed.pb -rpx pcie_wrapper_drc_routed.rpx
+Command: report_drc -file pcie_wrapper_drc_routed.rpt -pb pcie_wrapper_drc_routed.pb -rpx pcie_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file pcie_wrapper_methodology_drc_routed.rpt -pb pcie_wrapper_methodology_drc_routed.pb -rpx pcie_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file pcie_wrapper_methodology_drc_routed.rpt -pb pcie_wrapper_methodology_drc_routed.pb -rpx pcie_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/alexey101/vivado_prj/pcie/pcie.runs/impl_1/pcie_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file pcie_wrapper_power_routed.rpt -pb pcie_wrapper_power_summary_routed.pb -rpx pcie_wrapper_power_routed.rpx
+Command: report_power -file pcie_wrapper_power_routed.rpt -pb pcie_wrapper_power_summary_routed.pb -rpx pcie_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+102 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3213.180 ; gain = 118.285 ; free physical = 17304 ; free virtual = 29241
+INFO: [runtcl-4] Executing : report_route_status -file pcie_wrapper_route_status.rpt -pb pcie_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file pcie_wrapper_timing_summary_routed.rpt -pb pcie_wrapper_timing_summary_routed.pb -rpx pcie_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file pcie_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file pcie_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3213.180 ; gain = 0.000 ; free physical = 17321 ; free virtual = 29261
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file pcie_wrapper_bus_skew_routed.rpt -pb pcie_wrapper_bus_skew_routed.pb -rpx pcie_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force pcie_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC PDRC-62] SLICEM_5lutO5_B5: Dangling output pin O5 on site SLICE_X140Y142:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[10] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[6]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[11] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[7]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[12] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[8]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[13] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[9]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[14] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[10]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[4] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[0]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[5] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[1]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[6] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[2]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[7] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[3]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[8] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[4]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRARDADDR[9] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXWADDR[5]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[10] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[6]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[11] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[7]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[12] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[8]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[13] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[9]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[14] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[10]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[6] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[2]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[7] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[3]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[8] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[4]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/genblk5_0.bram36_tdp_bl.bram36_tdp_bl/ADDRBWRADDR[9] (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/pcie_bram_top/pcie_brams_rx/brams[0].ram/use_tdp.ramb36/MIMRXRADDR[5]) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gpfs.prog_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_12) which is driven by a register (pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 32 net(s) have no routable loads. The problem bus(es) and/or net(s) are pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, pcie_i/axi_interconnect_1/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, pcie_i/xdma_0/inst/pcie_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie_xdma_0_0_axi_stream_intf_i/pcie_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 32 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 24 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./pcie_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+120 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 3604.570 ; gain = 391.391 ; free physical = 16984 ; free virtual = 28945
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 23 17:16:03 2025...

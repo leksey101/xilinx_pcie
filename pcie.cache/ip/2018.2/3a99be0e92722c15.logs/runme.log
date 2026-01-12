@@ -1,0 +1,282 @@
+
+*** Running vivado
+    with args -log pcie_xlconstant_3_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pcie_xlconstant_3_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source pcie_xlconstant_3_0.tcl -notrace
+Command: synth_design -top pcie_xlconstant_3_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20928 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1313.953 ; gain = 84.000 ; free physical = 17444 ; free virtual = 28877
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pcie_xlconstant_3_0' [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xlconstant_3_0/synth/pcie_xlconstant_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (1#1) [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_xlconstant_3_0' (2#1) [/home/alexey101/vivado_prj/pcie/pcie.srcs/sources_1/bd/pcie/ip/pcie_xlconstant_3_0/synth/pcie_xlconstant_3_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1359.578 ; gain = 129.625 ; free physical = 17033 ; free virtual = 28469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1359.578 ; gain = 129.625 ; free physical = 16976 ; free virtual = 28414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1359.578 ; gain = 129.625 ; free physical = 16976 ; free virtual = 28414
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1695.188 ; gain = 1.000 ; free physical = 15486 ; free virtual = 26938
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1695.188 ; gain = 465.234 ; free physical = 15364 ; free virtual = 26818
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1695.188 ; gain = 465.234 ; free physical = 15364 ; free virtual = 26818
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1695.188 ; gain = 465.234 ; free physical = 15364 ; free virtual = 26818
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1695.188 ; gain = 465.234 ; free physical = 15364 ; free virtual = 26818
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3330] design pcie_xlconstant_3_0 has an empty top module
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[31] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[30] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[29] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[28] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[27] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[26] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[25] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[24] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[23] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[22] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[21] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[20] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[19] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[18] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[17] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[16] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[15] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[14] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[13] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[12] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[11] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[10] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[9] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[8] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[7] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[6] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[5] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[4] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[3] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[2] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[1] driven by constant 0
+INFO: [Synth 8-3917] design pcie_xlconstant_3_0 has port dout[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1695.188 ; gain = 465.234 ; free physical = 15354 ; free virtual = 26811
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14966 ; free virtual = 26441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14966 ; free virtual = 26441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14966 ; free virtual = 26441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14841 ; free virtual = 26316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14841 ; free virtual = 26316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14841 ; free virtual = 26316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14841 ; free virtual = 26316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14841 ; free virtual = 26316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14841 ; free virtual = 26316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1707.172 ; gain = 477.219 ; free physical = 14837 ; free virtual = 26312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1708.172 ; gain = 142.609 ; free physical = 14824 ; free virtual = 26299
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1708.180 ; gain = 478.219 ; free physical = 14824 ; free virtual = 26299
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:30 . Memory (MB): peak = 1732.172 ; gain = 521.676 ; free physical = 14645 ; free virtual = 26120
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/alexey101/vivado_prj/pcie/pcie.runs/pcie_xlconstant_3_0_synth_1/pcie_xlconstant_3_0.dcp' has been generated.
